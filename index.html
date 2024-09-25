@@ -224,7 +224,9 @@
  								 & &nbsp; Novi</h1>
 			
 								<h2 style="font-size: 12px;">Kepada Yth.</h2>
-								<h2 style="font-size: 12px;">Bapak/Ibu/Saudara/i</h2>
+								<h2 style="font-size: 12px;">Bapak/Ibu/Saudara/i:</h2>
+								<h1 style="font-family: 'Merriweather';font-weight: 400;font-size: 1rem;"><span></span></h1>
+								
 								
 								<p><strong>Sabtu, 28 September 2024</strong></p>
 								<p class="simply-countdown"></p>
@@ -599,7 +601,14 @@
     	// 		disableScroll();
     	// }
     	disableScroll();
+    </script>
 
+<script type="text/javascript">
+    	const urLParams = new URLSearchParams(window.location.search);
+    	const nama = urLParams.get('nama');
+
+    	const namaContainer = document.querySelector('.hero h1 span');
+    	namaContainer.innerText = nama;
     </script>
 </body>
 </html>
